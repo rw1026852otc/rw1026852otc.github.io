@@ -1,0 +1,111 @@
+/* 0. Variable Definition */
+:root {
+    --background-color: #EAD8C1;
+}
+
+/* 1. Mobile/Default Style */
+    /* 1.A Defaults and Background */
+body {
+    text-align: center;
+    
+    color: #27221F;
+
+    background-color: var(--background-color);
+    background-image: url("img/paper-texture.jpg");
+    background-blend-mode: color-burn;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+    /* 1.B Header */
+header {
+    margin: 15px;
+}
+
+header h1 {
+    margin: 0px;
+}
+
+header p {
+    margin: 0px;
+    font-style: italic;
+}
+
+    /* 1.C Nav */
+nav {
+    background: brown;
+    border-top: 3px solid #101010;
+    border-bottom: 3px solid #101010;
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+nav a {
+    background: #CA940C;
+    color: #101010;
+    border: 3px solid #27221F;
+    border-radius: 4px;
+    padding: 5px 8px 5px 8px;
+    margin: 2px;
+}
+
+nav a:focus {
+    color: #290000;
+    font-style: italic;
+}
+
+nav a:hover {
+    color: #04101B;
+    font-weight: bold;
+}
+
+    /* 1.D Main */
+h1 {
+    margin-bottom: 0px;
+}
+
+ul {
+    list-style: none;
+}
+
+    /* 1.E Footer */
+footer {
+    font-size: xx-small;
+    font-style: italic;
+}
+
+/* 2. Tablet Style */
+@media screen and (min-width: 768px) {
+    /* 2.A Main */
+    section {
+        margin: auto;
+        width: 60%;
+        margin-bottom: 40px;
+    }
+    
+    .centersection {
+        text-align: center;
+        padding: 0% 5% 0% 5%
+    }
+    
+    .leftsection {
+        text-align: left;
+        padding-right: 10%;
+    }
+    
+    .rightsection {
+        text-align: right;
+        padding-left: 10%;
+    }
+}
+
+/* 3. Desktop Style */
+@media screen and (min-width: 1080px) {
+    /* 3.A Main */
+    section {
+        margin: auto;
+        width: 80%;
+        margin-bottom: 40px;
+    }
+}
